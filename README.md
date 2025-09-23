@@ -4,15 +4,18 @@ This repository contains automated tests for the [SauceDemo](https://www.saucede
 
 ## Features Implemented ✅
 
-* **Login Tests**: Valid and invalid login scenarios
-* **Product Page Tests**: Verify product listing and details
-* **Add to Cart Tests**: Verify adding items to the shopping cart works correctly
+* **Login Test**: Valid and invalid login scenarios
+* **Product Page Test**: Verify product listing and details
+* **Add to Cart Test**: Verify adding items to the shopping cart works correctly
+* **About Me Landing Test**
+* **Report Logs and Bug Reports(log.txt)**
 
 ## Tech Stack 🛠
 
 * Python
 * Selenium WebDriver
 * Pytest
+* OOP
 
 ## How to Run
 

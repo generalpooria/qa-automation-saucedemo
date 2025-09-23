@@ -1,11 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
+import data_s.sauce_demo as sd
 
-def test_login_standard_user():
-    driver = webdriver.Firefox()
-    driver.get("https://www.saucedemo.com/")
-    driver.find_element(By.ID, "user-name").send_keys("standard_user")
-    driver.find_element(By.ID, "password").send_keys("secret_sauce")
-    driver.find_element(By.ID, "login-button").click()
-    assert "inventory" in driver.current_url
-    driver.quit()
+sd1 = sd.sauce_demo()
+sd1.test_about()
+sd1.quit()
+sd2 = sd.sauce_demo()
+sd2.test_login_standard_user()
+sd2.quit()
+sd3 = sd.sauce_demo()
+sd3.test_add_to_card()
+sd3.quit()
